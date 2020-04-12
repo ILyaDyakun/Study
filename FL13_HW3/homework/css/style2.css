@@ -1,0 +1,192 @@
+.header {
+  padding: 20px 190px;
+  background-image: url(../img/m-h-night.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  border-radius: 0 0 40% 0;
+}
+.header_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 50%;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+.header_heading::after {
+  content: '';
+  background-color: #ff4e33;
+  height: 60px;
+  width: 380px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+}
+.header_text {
+  line-height: 1.5;
+  font-size: 20px;
+  white-space: pre;
+}
+.header a {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 200px;
+}
+
+body {
+  background-color: #21232e;
+  font-family: "Fresca", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+}
+.landing-logo img {
+  height: 55px;
+  width: 55px;
+}
+.landing-logo p {
+  padding-left: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60%;
+  font-size: 30px;
+}
+.landing-logo p span {
+  display: block;
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+button {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #e3ac00;
+  border: none;
+  height: 60px;
+  width: 180px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #b08500;
+  color: black;
+  cursor: pointer;
+}
+
+.section {
+  padding: 0px 190px;
+}
+.section_link {
+  font-size: 18px;
+  color: #c0c3ce;
+}
+.section_text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.section_text::after {
+  content: '';
+  background-color: #ff4e33;
+  height: 55px;
+  width: 230px;
+  position: absolute;
+  bottom: 10px;
+  left: 770px;
+  z-index: -1;
+}
+.section_card {
+  background-color: #3b3f50;
+  color: #c0c3ce;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: flex;
+  width: 70%;
+  text-align: center;
+}
+.section_card_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+.section_card_right_container {
+  width: 60%;
+  padding: 10px 100px;
+  box-sizing: border-box;
+}
+.section_card_text {
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+.section_card_img {
+  width: 40%;
+  border-radius: 10px;
+}
+.section_banner {
+  background-image: linear-gradient(45deg, #e1a902, #932e52);
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 90px;
+}
+.section_banner_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.section_banner_heading::after {
+  content: '';
+  background-color: #ff4e33;
+  height: 55px;
+  width: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: 145px;
+  z-index: -1;
+}
+.section_banner_text {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+
+.footer {
+  background-color: #3b3f50;
+  color: #c0c3ce;
+  padding: 90px 190px 0;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.footer_text {
+  width: 380px;
+  line-height: 1.5;
+}
+.footer-cr, .footer_text {
+  font-size: 18px;
+}
