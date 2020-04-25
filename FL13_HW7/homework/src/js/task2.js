@@ -14,7 +14,6 @@ if (!start) {
         let cont = true;
         while (cont) {
             let random = Math.floor(Math.random() * (max + 1));
-            console.log(random);
             let t = false;
             for (let i = 1; ; i++) {
                 let number = +prompt(`Choose a roulette pocket number from 0 to ${max}
