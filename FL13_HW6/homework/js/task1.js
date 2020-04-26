@@ -5,11 +5,11 @@ const minPer = 0;
 const maxPer = 100;
 if (!isNaN(parseFloat(check)) && isFinite(check) && !isNaN(parseFloat(tip)) && isFinite(tip) && check >= 0 && tip >= minPer && tip <= maxPer) {
     let tipAmount = tip * check / hundred;
-    let sum = check + tipAmount;
-    alert(`Check number: ${check}
-Tip: ${tip}%
-Tip amount: ${tipAmount}
-Total sum to pay: ${sum}`);
+    let sum = +check + tipAmount;
+    alert(`Check number: ${Math.trunc(check * 100) / 100}
+Tip: ${Math.trunc(tip * 100) / 100}%
+Tip amount: ${Math.trunc(tipAmount * 100) / 100}
+Total sum to pay: ${Math.trunc(sum * 100) / 100}`);
 } else {
     alert('Invalid input data');
 }
