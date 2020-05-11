@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+  
+.element {
+    margin-left: 40px;
+    cursor: pointer;
+}
+  
+.close > ul {
+    display: none;
+}
+
+.folder {
+    color: #edbc0b;
+    float: left;
+    margin-right: 5px;
+    font-size: 20px;
+}
+  
+.file {
+    color: #bcbcbc;
+    float: left;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+p {
+    margin: 4px 0;
+}
+
+.empty {
+    font-style: italic;
+}
+
+p:not(.empty):hover {
+    background-color: #eff0f0;
+}
