@@ -24,7 +24,7 @@ function renderLeftSection(books) {
     });
 }
 
-function renderRightSection(books)  {
+function renderRightSection() {
     const currentUrl = new URL(window.location.href);
     if (currentUrl.hash === '#preview'){
         const currentId = currentUrl.searchParams.get('id');
@@ -47,7 +47,7 @@ function renderRightSection(books)  {
 window.onload = function () {
     books = JSON.parse(localStorage.getItem('books'));
     renderLeftSection(books);
-    renderRightSection(books);
+    renderRightSection();
 }
 
 function renderBookPreview(book) {
@@ -56,21 +56,21 @@ function renderBookPreview(book) {
 
     const preview = createNewElement('div', rightSection, 'preview', null);
 
-    const name = createNewElement('h3', preview, 'name', book.name);
+    createNewElement('h3', preview, 'name', book.name);
 
-    const author = createNewElement('h4', preview, 'author', book.author);
+    createNewElement('h4', preview, 'author', book.author);
 
     const image = createNewElement('img', preview, 'image', null);
     image.setAttribute('src', book.image);
 
-    const plot = createNewElement('p', preview, 'plot', book.plot);
+    createNewElement('p', preview, 'plot', book.plot);
 }
 
 function renderBookItem(book, parent) {
     const listItem = createNewElement('li', parent, 'list-item', null);
 
     const title = createNewElement('span', listItem, 'title', book.name);
-    title.addEventListener('click', function(event){
+    title.addEventListener('click', function(){
         const previewURL = new URL(window.location.origin + window.location.pathname);
         previewURL.searchParams.append('id', book.uid);
         previewURL.hash = 'preview';
