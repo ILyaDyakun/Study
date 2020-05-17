@@ -1,0 +1,87 @@
+#root {
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    height: 100vh;
+}
+
+.section {
+    width: 50%;
+    border: 1px solid red ;
+}
+
+.title {
+    color: red;
+    margin: 0 20px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.edit-button {
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: greenyellow;
+    width: 60px;
+    cursor: pointer;
+}
+
+.add-button {
+    margin-left: 10%;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: greenyellow;
+    width: 60px;
+    cursor: pointer;
+}
+
+#right-section {
+    color: indigo;
+    padding: 10px 20px 30px 20px;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: purple;
+    text-align: center;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.cancel-button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkred;
+    color: greenyellow;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+.save-button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: midnightblue;
+    color: greenyellow;
+    width: 100px;
+    cursor: pointer;
+}
+
+.image {
+    width: 50%;
+}
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
